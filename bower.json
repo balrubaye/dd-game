@@ -1,0 +1,19 @@
+{
+  "name": "kasim-game",
+  "version": "0.0.0",
+  "homepage": "https://github.com/balrubaye/kasim-game",
+  "authors": [
+    "Bassam Al Rubaye <b.alrubaye@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "easeljs": "~0.8.1"
+  }
+}
