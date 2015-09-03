@@ -26,6 +26,26 @@ module.exports = function(grunt) {
                 dest: 'build/',
                 expand: true,
                 flatten: true
+            },
+
+            css:{
+                src:[
+                    'app/css/*'
+                    ],
+                dest:'build/css',
+                expand:true,
+                flatten: true    
+
+            },
+
+            images:{
+                src:[
+                    'app/images/*'
+                    ],
+                dest: 'build/images',
+                expand:true,
+                flatten:true
+                    
             }
         },
         connect: {
@@ -41,7 +61,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             scripts: {
-                files: ['app/lib/**/*.js', 'app/*.html'],
+                files: ['app/lib/*.js', 'app/*.html', 'app/css/*.css', 'Gruntfile.js'],
                 tasks: ['build']
             }
         }
